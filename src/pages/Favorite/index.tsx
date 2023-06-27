@@ -9,6 +9,7 @@ export default function Favoritos() {
 
     const handleFavoriteClick = (anime: any) => {
     removeProductToCart(anime);
+    alert("Item removido dos favoritos!");
   };
 
   return (

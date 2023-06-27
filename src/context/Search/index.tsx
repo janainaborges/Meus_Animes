@@ -2,17 +2,13 @@ import React, { createContext, useEffect, useState } from "react";
 import { api } from "../../services/api"; 
 
 interface Anime {
-  // Defina a interface para o tipo de dados do anime
-  // De acordo com a estrutura retornada pela API
-  // Exemplo:
   id: number;
   title: string;
-  // ... outras propriedades do anime
 }
 
 interface SearchContextData {
-  info: any; // Altere o tipo any para o tipo apropriado (ex: Anime[])
-  setInfo: React.Dispatch<React.SetStateAction<any>>; // Altere o tipo any para o tipo apropriado (ex: React.Dispatch<React.SetStateAction<Anime[]>>)
+  info: any; 
+  setInfo: React.Dispatch<React.SetStateAction<any>>; 
   text: string;
   setText: React.Dispatch<React.SetStateAction<string>>;
 }
@@ -25,7 +21,7 @@ export const SearchContext = createContext<SearchContextData>({
 });
 
 export function SearchProvider({ children }: { children: React.ReactNode }) {
-  const [info, setInfo] = useState<any>({}); // Altere o tipo any para o tipo apropriado (ex: Anime[])
+  const [info, setInfo] = useState<any>({});
   const [text, setText] = useState("");
 
   useEffect(() => {

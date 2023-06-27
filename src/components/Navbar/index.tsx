@@ -20,10 +20,10 @@ const Navbar = () => {
         </Styled.SLeft>
         <Styled.SCenter>
           {" "}
-          <Link to="/">Animes</Link>
+          <Link to="/" style={{ textDecoration: 'none', color: 'black'}}>Animes</Link>
         </Styled.SCenter>
         <Styled.SRight>
-          <input value={text} onChange={handleInputChange} />
+          <input value={text} onChange={handleInputChange} placeholder="Pesquise seu anime..." />
           <Link to="/favoritos">
             {
               <MdFavoriteBorder

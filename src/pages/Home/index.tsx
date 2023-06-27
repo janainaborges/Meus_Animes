@@ -11,7 +11,7 @@ export default function Home() {
   const { info, text } = useSearch();
   const { addProducToCart } = useFavorite();
   const [open, setOpen] = useState(false);
-  const [capture, setCapture] = useState<any>(null); // Defina o tipo apropriado para a variável de estado
+  const [capture, setCapture] = useState<any>(null); 
 
   const handleCardClick = (anime: any) => {
     setCapture(anime);
@@ -20,6 +20,8 @@ export default function Home() {
 
   const handleFavoriteClick = (anime: any) => {
     addProducToCart(anime);
+    alert("Item adicionado aos favoritos!");
+
   };
 
   return (
