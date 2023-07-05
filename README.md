@@ -6,3 +6,6 @@ Baixa o projeto: execute o YARN, as instalações do projeto
 yarn dev - é para executar o projeto
 yarn test - para executar o test
 
+##Para dar uma olhada em como o projeto está só clicar no link abaixo
+https://meus-animes.vercel.app/
+
