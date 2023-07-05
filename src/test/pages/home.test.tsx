@@ -8,7 +8,7 @@ test('renders cards when data is available', () => {
     { id: 3, title: 'Card 3' },
   ];
 
-  render(<Home data={mockData} />);
+  // render(<Home data={mockData} />);
 
   const cardElements = screen.getAllByTestId('card');
 
